@@ -1,0 +1,3 @@
+# TypeScript Type Error Doesn't Halt Execution
+
+This repository demonstrates a scenario where a TypeScript type error does not prevent the program from running.  The function `printNumber` expects a number, but a string is passed. While TypeScript correctly flags this as a type error, the JavaScript code still executes without throwing an error at runtime, printing '10' to the console.  This is because TypeScript is a static type checker; it doesn't insert runtime checks to enforce the types.
